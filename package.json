@@ -1,0 +1,23 @@
+{
+  "name": "crypto_arbitrager",
+  "version": "1.0.0",
+  "description": "collects arbitrageable cryptocurrency data and simulates exploiting its opportunities",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mad360/crypto_arbitrager.git"
+  },
+  "author": "Matt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mad360/crypto_arbitrager/issues"
+  },
+  "homepage": "https://github.com/mad360/crypto_arbitrager#readme",
+  "dependencies": {
+    "ccxt": "^1.55.18",
+    "mongodb": "^4.1.0"
+  }
+}
