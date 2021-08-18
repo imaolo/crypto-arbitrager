@@ -37,7 +37,7 @@ async function tick(){
 async function DBRecordTickers(){
     try{
         let tickers_coll = db_client.collection("tickers")
-        await tickers_coll.insertOne({datetime: `${new Date()}`, data: `${tickers}`})
+        await tickers_coll.insertOne({datetime: new Date(), data:tickers})
     } catch (err){
         console.log("\nDBRecordTickers() error\n")
         console.error(err)
