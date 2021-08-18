@@ -108,8 +108,8 @@ async function loadMarkets()
 async function DBReportError(err){
     let errors_coll = await db_client.collection("errors")
     let error_doc = {
-        datetime: `${new Date()}`,
-        error: `${err}`
+        datetime: new Date(),
+        error: err
     }
     await errors_coll.insertOne(error_doc)
 }
