@@ -33,8 +33,8 @@ async function tick(){
     }
     if (tickCount % 10000 == 0){
         //reinitialize exchange objects
-        var phemex = new ccxt.phemex();
-        var bybit  = new ccxt.bybit();
+        phemex = new ccxt.phemex();
+        bybit  = new ccxt.bybit();
         await loadMarkets()
         findCommonMarkets()
     }
