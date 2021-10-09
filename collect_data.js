@@ -33,6 +33,7 @@ async function tick(){
     }
     if (tickCount % 10000 == 0){
         //reinitialize exchange objects
+        console.log("Reinitializing")
         phemex = new ccxt.phemex();
         bybit  = new ccxt.bybit();
         await loadMarkets()
