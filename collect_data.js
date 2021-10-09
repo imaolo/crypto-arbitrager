@@ -31,6 +31,13 @@ async function tick(){
         console.log("\ntick() error\n")
         console.error(err)
     }
+    if (tickCount % 10000 == 0){
+        //reinitialize exchange objects
+        var phemex = new ccxt.phemex();
+        var bybit  = new ccxt.bybit();
+        await loadMarkets()
+        findCommonMarkets()
+    }
 }
 
 //places tickers data into the database
